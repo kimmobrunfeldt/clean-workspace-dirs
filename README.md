@@ -33,7 +33,8 @@ and [clean-workspace-dirs.sh](clean-workspace-dirs.sh) to see what they actually
 #### More details
 
 Before you start hacking the clean script, remember that `rm -rf` will follow mounted directories also.
-So if you have external drive mounted to your Desktop, it will remove files from it also.
+So if you have external drive mounted to your Desktop, it will remove files from it also. The drive would have to be mounted to
+Desktop or Downloads by hand. Even though the volumes show up in Desktop, they are not mounted in ~/Desktop.
 **The current script does not use `-r` flag and thus it does _not_ remove your files in external devices.**
 
 You might want to edit [com.kimmobrunfeldt.clean-workspace-dirs.plist](com.kimmobrunfeldt.clean-workspace-dirs.plist) to your needs. Now the settings are:
