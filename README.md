@@ -1,4 +1,4 @@
-# Clean workspace directories daily in OS X
+# Clean directories with scheduled task in OS X
 
 My Downloads and Desktop directories tend to grow with temporary installation files and documents.
 I want to have them cleaned with a daily scheduled task to prevent myself from even saving important stuff there.
