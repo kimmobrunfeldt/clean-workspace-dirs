@@ -1,11 +1,11 @@
-# Clean directories with scheduled task in OS X
+## Clean directories with scheduled task in OS X
 
 My Downloads and Desktop directories tend to grow with temporary installation files and documents.
 I want to have them cleaned with a daily scheduled task to prevent myself from even saving important stuff there.
 
 You can do this too.
 
-## Here's how
+### Here's how
 
 <span style="color: red">
 **WARNING: Running these commands will remove all files in your Downloads and Desktop directories! Have backups!**
@@ -29,7 +29,7 @@ launchctl load ~/Library/LaunchAgents/com.kimmobrunfeldt.clean-workspace-dirs.pl
 I strongly recommend you to read [com.kimmobrunfeldt.clean-workspace-dirs.plist](com.kimmobrunfeldt.clean-workspace-dirs.plist)
 and [clean-workspace-dirs.sh](clean-workspace-dirs.sh) to see what they actually do.
 
-### More details
+#### More details
 
 When configuring the clean script, remember that `rm -rf` will follow mounted directories also.
 So if you have external drive mounted to your Desktop, it will remove files from it also.
