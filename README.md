@@ -32,9 +32,9 @@ and [clean-workspace-dirs.sh](clean-workspace-dirs.sh) to see what they actually
 
 #### More details
 
-When configuring the clean script, remember that `rm -rf` will follow mounted directories also.
+Before you start hacking the clean script, remember that `rm -rf` will follow mounted directories also.
 So if you have external drive mounted to your Desktop, it will remove files from it also.
-The current script does not use `-r` flag.
+**The current script does not use `-r` flag and thus it does _not_ remove your files in external devices.**
 
 You might want to edit [com.kimmobrunfeldt.clean-workspace-dirs.plist](com.kimmobrunfeldt.clean-workspace-dirs.plist) to your needs. Now the settings are:
 
@@ -48,7 +48,7 @@ You might want to edit [com.kimmobrunfeldt.clean-workspace-dirs.plist](com.kimmo
 
         This optional key is used to control whether your job is launched once at the time the job is loaded.
 
-* `Program` is `/usr/bin/local/clean-workspace-dirs.sh`. Program to be run. You cannot add parameters to this value, check `ProgramArguments` instead.
+* `Program` is `/usr/local/bin/clean-workspace-dirs.sh`. Program to be run. You cannot add parameters to this value, check `ProgramArguments` instead.
 
 * `StartCalendarInterval` is every day 14:00.
 
