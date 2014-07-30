@@ -8,7 +8,7 @@
     <key>RunAtLoad</key>
     <true/>
     <key>Program</key>
-    <string>/usr/bin/local/clean-workspace-dirs.sh</string>
+    <string>/usr/local/bin/clean-workspace-dirs.sh</string>
     <key>StartCalendarInterval</key>
     <dict>
         <key>Hour</key>

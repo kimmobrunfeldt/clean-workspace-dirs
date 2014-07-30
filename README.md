@@ -3,9 +3,11 @@
 My Downloads and Desktop directories tend to grow with temporary installation files and documents.
 I want to have them cleaned with a daily scheduled task to prevent myself from even saving important stuff there.
 
+
 You can do this too.
 
 ### Here's how
+
 
 <span style="color: red">
 **WARNING: Running these commands will remove all files in your Downloads and Desktop directories! Have backups!**
@@ -18,11 +20,10 @@ from your user's ~/Downloads and ~/Desktop folders daily at 14:00(2pm).
 git clone https://github.com/kimmobrunfeldt/clean-workspace-dirs.git
 cd clean-workspace-dirs
 
-cp clean-workspace-dirs.sh /usr/bin/local/
-chmod +x /usr/bin/local/clean-workspace-dirs.sh
-cp com.kimmobrunfeldt.clean-workspace-dirs.plist ~/Library/LaunchAgents/
+cp clean-workspace-dirs.sh /usr/local/bin/
+chmod +x /usr/local/bin/clean-workspace-dirs.sh
 
-# WARNING! This will also run the clean task
+cp com.kimmobrunfeldt.clean-workspace-dirs.plist ~/Library/LaunchAgents/
 launchctl load ~/Library/LaunchAgents/com.kimmobrunfeldt.clean-workspace-dirs.plist
 ```
 
